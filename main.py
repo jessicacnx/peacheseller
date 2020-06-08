@@ -13,7 +13,7 @@ def index():
 @app.route('/sellerproduct', methods=["GET","POST"])
 def sellerproduct():
   if request.method == 'GET': # GET
-    return render_template("/templates/sellerproduct.html")
+    return render_template("/sellerproduct.html")
 
   else: # POST
     # record html variables into python variables
@@ -68,17 +68,17 @@ def sellerproduct():
       fin.close()
 
       #valid
-      return render_template("/templates/productcompleted.html")
+      return render_template("/productcompleted.html")
 
     else x == False:
       #invalid
-      return render_template("/templates/productrejected.html")
+      return render_template("/productrejected.html")
 
 # Seller Registration Form
 @app.route('/sellerregister', methods=["GET","POST"])
 def sellerregister():
   if request.method == 'GET': # GET
-    return render_template("/templates/sellerregister.html")
+    return render_template("/sellerregister.html")
 
   else: # POST
     # record html variables into python variables
@@ -93,7 +93,7 @@ def sellerregister():
 
     if b_dec == "Disagree":
       # invalid
-      return render_template("/templates/registerfailed.html")
+      return render_template("/registerfailed.html")
 
     else:
       # write variables into json
@@ -115,7 +115,7 @@ def sellerregister():
       fout = open("info.txt", "a")
       fout.write(s_newjson + "\n")
       fout.close()
-      return render_template("/templates/registeroutput.html")
+      return render_template("/registeroutput.html")
     return
 
 
