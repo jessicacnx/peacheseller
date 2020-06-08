@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <title>Web Form for Sellers</title>
+    <link rel = "stylesheet"
+    type = "text/css"
+    href = "static/style.css" href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Open+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="favicon.JPG">
+	</head>
+
+	<body2>
+    
+    <img src="media/peachebanner.PNG">
+
+    <div class="fheader">
+      <h10> p e a c h e   s e l l e r </h10>
+
+      <!-- information -->
+
+      <p2> Thank you for your interest in becoming a peache seller! <p2>
+      <p3> Please complete this form to become a peache seller. Once you have filled in all the details, press submit and we will process the application. It may take a few days to process the application and we will inform you of whether the application is successful or not through email. </p3>
+      <p3> Information collected will be confidential and are necessary in order to make sure that you are a valid seller. </p3>
+      </p3> Please ensure that you have the following items:</br>
+      1. NRIC </br>
+      2. ACRA Business Profile </br>
+      3. Copy of your clothing catalog </br></p3>
+    </div>
+
+    <p3>
+
+      <!-- seller information -->
+      <div class="fcard">
+        <h5> Key Contact Information </h5>
+        
+        <form action="/" method="POST">
+          <h4>Primary Contact Full Name </h4>
+          <input type="text" name="name"/>
+
+          <h4>Primary Contact Number </h4>
+          <input type="number" name="contactnum"/>
+
+          <h4>Primary Contact Email </h4>
+          <input type="number" name="contactemail"/>
+
+          <h4>Primary NRIC </h4>
+          <input type="number" name="nric"/>
+        </form>
+      </div>
+
+      <!-- business information + validity -->
+      <div class="fcard">
+        <h5> Business Information </h5>
+
+        <form action="/" method="POST">
+          <h4>Business Name</h4>
+          <input type="text" name="bname"/>
+
+          <h4>Business Passwords</h4>
+          <p1>This password is to ensure that you are you when you add clothes to sell.</p1>
+          <input type="text" name="bpw"/>
+
+          <h4>What is your business type?</h4> 
+          <input type="radio" name="btype" value="Company">
+          <input type="radio" name="btype" value="Sole Propietor">
+          <input type="radio" name="btype" value="Public Sector"> 
+          <input type="radio" name="btype" value="Trusts, Charities, Foundation and Clubs">
+        </form>
+
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+          <h4>Please upload ACRA Business Profile</h4> 
+          <input type="file" name="acra_prf">
+        </form>
+
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+          <h4>Please upload your Business' Clothing Catalog</h4> 
+          <input type="file" name="catalog">
+        </form>
+      </div>
+
+      <!-- confirmation -->
+      <div class="fheader">
+        <form action="/" method="POST">
+          <h4>By clicking agree, I hereby declare that the above information provided in this entire form is true & accurate; & I would like to proceed with my application to be a peache seller.</h4>
+          <input type="radio" name="declare" value="Agree">
+          <input type="radio" name="declare" value="Disagree">
+
+          <input type="submit" value="Submit Form" />
+        </form>
+      </div>
+
+    </p3>
+  </body2>
+</html>
