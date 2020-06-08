@@ -22,15 +22,20 @@ def sellerproduct():
     
     # check database
     fread = open('info.txt', 'r')
-    try:
-      temp_nric = fread.search(sp_nric)
-      temp_pw = fread.search(sp_nric+4)
-    except:
-      #invalid
-      return render_template("productrejected.html")
+
+    for line in fread: 
+      count += 1
+      if sp_nric == line[7]:
+        return True
+      if not line: 
+        return False
+      else: 
+        continue
+    
+    fread.close()
 
     # check if valid
-    if sp_nric == temp_nric and temp_pw == sp_pw:
+    if True:
       # record html variables into python variables
       pname = request.form.get('pname')
       pprice = request.form.get('pprice')
@@ -59,7 +64,7 @@ def sellerproduct():
       #valid
       return render_template("templates/productcompleted.html")
 
-    else:
+    else False:
       #invalid
       return render_template("templates/productrejected.html")
 
@@ -78,7 +83,6 @@ def sellerregister():
 
     bname = request.form.get('bname')
     bpw = request.form.get('bpw')
-    btype = request.form.get('btype')
     declare = request.form.get('declare')
 
     if declare == "Disagree":
@@ -96,24 +100,15 @@ def sellerregister():
       
         "bname": bname,
         "bpw": bpw,
-        "btype": btype,
       }
 
       # convert into JSON
       s_newjson = json.dumps(s_newdict)
 
       # update database
-      fout = open("info.txt", 'a')
-      fout.write(s_newjson)
+      fout = open("info.txt", "a")
+      fout.write(s_newjson + "\n")
       fout.close()
-
-      facra = open("media/acra", "a")
-      facra.write(acra)
-      facra.close()
-
-      fcata = open("media/cata", "a")
-      fcata.write(cata)
-      fcata.close()
       return
     return
 
@@ -128,9 +123,9 @@ Note for Coder:
 
 1. make sure database records
 2. make sure database checks
-3. make email work
 4. make everyth work
 5. make it look nice
+stupid img banner
 
 '''
 
