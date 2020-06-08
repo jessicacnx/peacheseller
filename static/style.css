@@ -207,35 +207,6 @@ input[type=text]:focus {
   border: 3px solid #555;
 }
 
-/* Upload File */
-input[type="file"] {
-  height: 0;
-  overflow: hidden;
-  width: 0;
-}
-
-input[type="file"] + label {
-  background: #dba9b5;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: 'Open Sans', sans-serif;
-  font-size: inherit;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  outline: none;
-  padding: 1rem 50px;
-  position: relative;
-  transition: all 0.3s;
-  vertical-align: middle;
-}
-  
-input[type="file"]:hover {
-  background-color: darken(#d694a4, 10%);
-}
-
 /* link */
 a{
   font-family: 'Open Sans', sans-serif;
