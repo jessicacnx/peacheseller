@@ -55,8 +55,7 @@ p3 {
   text-align: left;
   background: #ffffff;
   border-radius: 10px;
-  justify-content: space-between;
-  margin: 0 0 0 15px;
+  margin: 15px;
 }
 
 .fheader{
@@ -64,8 +63,7 @@ p3 {
   text-align: left;
   background: #ffffff;
   border-radius: 10px;
-  justify-content: space-between;
-  margin: 0 0 0 15px;
+  margin: 15px;
 }
 
 .card{
@@ -73,7 +71,7 @@ p3 {
   padding: 40px;
   text-align: left;
   border-radius: 10px;
-  margin: 0 0 0 15px;
+  margin: 15px;
 }
 
 .fcard{
@@ -81,7 +79,7 @@ p3 {
   padding: 40px;
   text-align: left;
   border-radius: 10px;
-  margin: 0 0 0 15px;
+  margin: 15px;
 }
 
 /* ---------------------------------------------------------------- */
