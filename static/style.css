@@ -90,6 +90,10 @@ p3 {
   margin-top: 20px;
 }
 
+.image{
+    background: black url(../media/peachebanner.PNG) center no-repeat;
+}
+
 /* ---------------------------------------------------------------- */
 
     /* __input__ */
