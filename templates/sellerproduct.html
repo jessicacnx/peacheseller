@@ -6,70 +6,76 @@
     <link rel = "stylesheet"
     type = "text/css"
     href = "../static/style.css" href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Open+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="favicon.JPG">
+    <link rel="shortcut icon" type="image/png" href="../media/peachelogo.PNG
 
 	</head>
 
 	<body1>
     
-    <img src="../media/peachebanner.PNG">
+    	<img src="../media/peachebanner1PNG">
 
-    <div class="fheader">
-      <h10> p e a c h e   s e l l e r </h10>
-      
-      <h5> Upload your Product </h5>
-      <p2> If you want to add more of your products onto peache, please complete the form below. <p2>
-    </div>
+    	<div class="fheader">
+		<h6>peache   seller</h6>
+      		<br>
+      		<h5> Upload your Product </h5>
+      		<p2> If you want to add more of your products onto peache, please complete the form below. <p2>
+    	</div>
 
-    <!-- Check -->
+	<br><br>
 
-    <div class="fcard">
-      <h5> Seller Information </h5>
+	<!-- Check -->
 
-      <form action="/" method="POST">
-        <h4>Seller NRIC (Input Last 6 Digits) </h4>
-        <input type="text" name="sp_nric"/>
+    	<div class="fcard">
+      		<h5> Seller Information </h5>
 
-        <h4>Seller Password </h4>
-        <input type="text" name="sp_pw"/>
-      </form>
-    </div>
+      		<form action="/" method="POST">
+        		<h4>Seller NRIC (Input Last 6 Digits) </h4>
+        		<input type="text" name="sp_nric"/>
+
+        		<h4>Seller Password </h4>
+        		<input type="text" name="sp_pw"/>
+      		</form>
+    	</div>
     
-    <!-- Product -->
+    	<!-- Product -->
 
-    <div class="fcard">
-      <h5> Product Information </h5>
+    	<div class="fcard">
+      		<h5> Product Information </h5>
 
-      <form action="/" method="POST">
-        <h4>Product Name </h4>
-        <input type="text" name="pname"/>
+      		<form action="/" method="POST">
+        		<h4>Product Name </h4>
+        		<input type="text" name="pname"/>
 
-        <h4>Product Price </h4>
-        <input type="text" name="pprice"/>
+        		<h4>Product Price </h4>
+        		<input type="text" name="pprice"/>
 
-        <h4>Product Link </h4>
-        <p2> Please enter the url of where your product is sold. </p2>
-        <input type="text" name="plink"/>
-      </form>
+        		<h4>Product Link </h4>
+        		<p2> Please enter the url of where your product is sold. </p2>
+        		<input type="text" name="plink"/>
+      		</form>
 
-      <form action="upload.php" method="post" enctype="multipart/form-data">
-        <h4>Product Image </h4>
-        <p2> Please enter the url of your jpg image. </p2>
-        <input type="text" name="pimg"/>
-      </form>
-    </div>
+      		<form action="upload.php" method="post" enctype="multipart/form-data">
+        		<h4>Product Image </h4>
+        		<p2> Please enter the url of your jpg image. </p2>
+        		<input type="text" name="pimg"/>
+      		</form>
+    	</div>
 
-    <!-- confirmation -->
+    	<!-- confirmation -->
 
-    <div class="fcard">
-      <form action="/" method="POST">
-        <h4>By clicking agree, I hereby declare that the above information provided in this entire form is true & accurate; & I would like to proceed with my application for my product.</h4>
-        <input type="radio" name="declare" value="Agree">
-        <input type="radio" name="declare" value="Disagree">
-
-        <input type="submit" value="Submit Form" />
-      </form>
-    </div>
+    	<div class="fcard">
+      		<form action="/" method="POST">
+        		<h4>By clicking agree, I hereby declare that the above information provided in this entire form is true & accurate; & I would like to proceed with my application for my product.</h4>
+			<p2><input type="radio" name="declare" value="Agree"> Agree </p2><br>
+			<p2><input type="radio" name="declare" value="Disagree"> Disagree </p2><br>
+      		</form>
+    	</div>
+	
+	<div class="fcard">
+		<form action="/" method="POST">
+			  <input type="submit" value="Submit Form">
+		</form>
+	</div>
 
   </body1>
 </html>
