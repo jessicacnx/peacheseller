@@ -7,13 +7,13 @@ app = Flask(__name__)
 # Home Page
 @app.route('/index')
 def index():
-  return render_template('templates/index.html')
+  return render_template('/index.html')
 
 # Upload Product Form
 @app.route('/sellerproduct', methods=["GET","POST"])
 def sellerproduct():
   if request.method == 'GET': # GET
-    return render_template("templates/sellerproduct.html")
+    return render_template("/templates/sellerproduct.html")
 
   else: # POST
     # record html variables into python variables
@@ -21,7 +21,7 @@ def sellerproduct():
     sp_pw = request.form.get('sp_pw')
     
     # check database
-    fread = open('info.txt', 'r')
+    fread = open('/info.txt', 'r')
 
     for line in fread: 
       count += 1
@@ -55,24 +55,24 @@ def sellerproduct():
       p_newjson = json.dumps(p_newdict)
 
       # print JSON string into INFO.txt
-      fout = open("info.txt", 'a')
+      fout = open("/info.txt", 'a')
       fout.write(p_newjson)
       fout.close()
-      fin = open("info.txt", 'r')
+      fin = open("/info.txt", 'r')
       fin.close()
 
       #valid
-      return render_template("templates/productcompleted.html")
+      return render_template("/templates/productcompleted.html")
 
     else False:
       #invalid
-      return render_template("templates/productrejected.html")
+      return render_template("/templates/productrejected.html")
 
 # Seller Registration Form
 @app.route('/sellerregister', methods=["GET","POST"])
 def sellerregister():
   if request.method == 'GET': # GET
-    return render_template("templates/sellerregister.html")
+    return render_template("/templates/sellerregister.html")
 
   else: # POST
     # record html variables into python variables
@@ -87,7 +87,7 @@ def sellerregister():
 
     if declare == "Disagree":
       # invalid
-      return render_template("templates/registerfailed.html")
+      return render_template("/templates/registerfailed.html")
 
     else:
       # write variables into json
@@ -109,7 +109,7 @@ def sellerregister():
       fout = open("info.txt", "a")
       fout.write(s_newjson + "\n")
       fout.close()
-      return render_template("templates/registeroutput.html")
+      return render_template("/templates/registeroutput.html")
     return
 
 
