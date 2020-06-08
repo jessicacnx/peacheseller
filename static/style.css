@@ -131,7 +131,7 @@ input[type=submit]:hover {
 /*-----------------------------------------------------------------------------*/
     /* Bullet Point Button */
 /* Customize the label (the container) */
-.radio {
+.container {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -145,7 +145,7 @@ input[type=submit]:hover {
 }
 
 /* Hide the browser's default radio button */
-.radio input {
+.container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -165,13 +165,13 @@ input[type=submit]:hover {
 }
 
 /* On mouse-over, add a grey background color */
-.radio:hover input ~ .checkmark {
+.container:hover input ~ .checkmark {
   background-color: #ccc;
 }
 
 /* When the radio button is checked, add a blue background */
-.radio input:checked ~ .checkmark {
-  background-color: #edadc5;
+.container input:checked ~ .checkmark {
+  background-color: #e09687;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -182,12 +182,12 @@ input[type=submit]:hover {
 }
 
 /* Show the indicator (dot/circle) when checked */
-.radio input:checked ~ .checkmark:after {
+.container input:checked ~ .checkmark:after {
   display: block;
 }
 
 /* Style the indicator (dot/circle) */
-.radio .checkmark:after {
+.container .checkmark:after {
   top: 9px;
   left: 9px;
   width: 8px;
@@ -280,6 +280,13 @@ h5{
 /* peache */
 h6{
   text-align:center;
+  font-family: 'Comfortaa', cursive;
+  font-size: 60px;
+  color: #434b4d;
+}
+
+h6{
+  text-align:left;
   font-family: 'Comfortaa', cursive;
   font-size: 60px;
   color: #434b4d;
