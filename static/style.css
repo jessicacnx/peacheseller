@@ -27,11 +27,13 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-size: 25px;
   text-align: center;
+  color:#595959;
 }
 
 p1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 30px;
+  color:#595959;
 }
 
 /* Form Text*/
@@ -39,12 +41,14 @@ p2 {
   font-family: 'Open Sans', sans-serif;
   font-size: 25px;
   font-weight: bold;
+  color:#595959;
 }
 
 /* More Information in Form */
 p3 {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
+  color: #7d7d7d;
 }
 
 /* ---------------------------------------------------------------- */
@@ -92,7 +96,7 @@ p3 {
 
 /* Submtit Button */
 input[type=submit]{
-  background-color: #FFDAB9;
+  background-color: #edadc5;
   border: 10px;
   color: white;
   text-align: center;
@@ -107,7 +111,7 @@ input[type=submit]{
 
 /* Submtit Button Hover */
 input[type=submit]:hover {
-  background-color: #ffcba4;
+  background-color: #f291ab;
   border: 10px;
   color: white;
   text-align: center;
@@ -163,7 +167,7 @@ input[type=submit]:hover {
 
 /* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background-color: #dea5a4;
+  background-color: #edadc5;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -201,6 +205,7 @@ input[type=text]{
   transition: 0.5s;
   outline: none;
   font-family: 'Open Sans', sans-serif;
+  color:#4f4f4f;
 }
 
 input[type=text]:focus {
@@ -211,7 +216,7 @@ input[type=text]:focus {
 a{
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  color: rgb(212, 152, 162);
+  color: #edadc5;
 }
 
 /* image */
