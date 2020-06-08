@@ -19,23 +19,29 @@ def sellerproduct():
     # record html variables into python variables
     sp_nric = request.form.get('sp_nric')
     sp_pw = request.form.get('sp_pw')
+    sp_dec = request.form.get('p_declare')
     
     # check database
     fread = open('/info.txt', 'r')
-
+    
     for line in fread: 
       count += 1
       if sp_nric == line[7]:
-        return True
+        x = True
+        break
       if not line: 
-        return False
+        x = False
+        break
       else: 
         continue
+    
+    if sp_dec == "Disagree":
+      x = False
     
     fread.close()
 
     # check if valid
-    if True:
+    if x == True:
       # record html variables into python variables
       pname = request.form.get('pname')
       pprice = request.form.get('pprice')
@@ -64,7 +70,7 @@ def sellerproduct():
       #valid
       return render_template("/templates/productcompleted.html")
 
-    else False:
+    else x == False:
       #invalid
       return render_template("/templates/productrejected.html")
 
@@ -83,9 +89,9 @@ def sellerregister():
 
     bname = request.form.get('bname')
     bpw = request.form.get('bpw')
-    declare = request.form.get('declare')
+    b_dec = request.form.get('s_declare')
 
-    if declare == "Disagree":
+    if b_dec == "Disagree":
       # invalid
       return render_template("/templates/registerfailed.html")
 
