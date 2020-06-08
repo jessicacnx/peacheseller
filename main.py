@@ -7,13 +7,13 @@ app = Flask(__name__)
 # Home Page
 @app.route('/')
 def index():
-  return render_template('index.html')
+  return render_template('templates/index.html')
 
 # Upload Product Form
 @app.route('/sellerproduct', methods=["GET","POST"])
 def sellerproduct():
   if request.method == 'GET': # GET
-    return render_template("sellerproduct.html")
+    return render_template("templates/sellerproduct.html")
 
   else: # POST
     # record html variables into python variables
@@ -57,17 +57,17 @@ def sellerproduct():
       fin.close()
 
       #valid
-      return render_template("productcompleted.html")
+      return render_template("templates/productcompleted.html")
 
     else:
       #invalid
-      return render_template("productrejected.html")
+      return render_template("templates/productrejected.html")
 
 # Seller Registration Form
 @app.route('/sellerregister', methods=["GET","POST"])
 def sellerregister():
   if request.method == 'GET': # GET
-    return render_template("sellerregister.html")
+    return render_template("templates/sellerregister.html")
 
   else: # POST
     # record html variables into python variables
@@ -79,11 +79,7 @@ def sellerregister():
     bname = request.form.get('bname')
     bpw = request.form.get('bpw')
     btype = request.form.get('btype')
-    acra_prf = request.form.get('acra_prf')
-    catalog = request.form.get('catalog')
     declare = request.form.get('declare')
-    acra = img.save(acra_prf) 
-    cata = img.save(catalog) 
 
     if declare == "Disagree":
       # invalid
@@ -118,31 +114,12 @@ def sellerregister():
       fcata = open("media/cata", "a")
       fcata.write(cata)
       fcata.close()
-
-      # write email - to alert and check if valid
-      sender = 'peache_notify@gmail.com'
-      receivers = ['chan.jiji.jessica@dhs.sg']
-
-      message = """
-      From: peache <peache_notify@gmail.com>
-      To: ji <chan.jiji.jessica@dhs.sg>
-      Subject: New Seller Registration
-      """, 
-      bname, "has registered with peache. Please check if the application is valid."
-
-      try:
-        smtpObj = smtplib.SMTP(25)
-        smtpObj.sendmail(sender, receivers, message)  
-        return render_template("registeroutput.html")       
-      
-      except:
-        return render_template("registerfailed.html")
       return
     return
 
 
 # ** Future Plan: **
-# prevent spam (repeated email, spam bots)
+# prevent spam (repeated email, spam bots, valid documents)
 # create safe database
 # create email for company
 
