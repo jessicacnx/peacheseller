@@ -51,6 +51,12 @@ p3 {
   color: #7d7d7d;
 }
 
+p4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #595959;
+}
+
 /* ---------------------------------------------------------------- */
 
     /* __div__ */
@@ -69,7 +75,7 @@ p3 {
   background: #ffffff;
   border-radius: 10px;
   margin: 170px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .card{
@@ -78,7 +84,7 @@ p3 {
   text-align: left;
   border-radius: 10px;
   margin: 170px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .fcard{
@@ -87,13 +93,16 @@ p3 {
   text-align: left;
   border-radius: 10px;
   margin: 170px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .image{
-    background: black url(../media/peachebanner1.PNG) center no-repeat;
+    background: black url(media/peachebanner1.PNG) center no-repeat;
 }
 
+.fimage{
+    background: black url(../media/peachebanner1.PNG) center no-repeat;
+}
 /* ---------------------------------------------------------------- */
 
     /* __input__ */
@@ -279,14 +288,14 @@ h5{
 
 /* peache */
 h6{
-  text-align:center;
+  text-align: center;
   font-family: 'Comfortaa', cursive;
   font-size: 60px;
   color: #434b4d;
 }
 
-h6{
-  text-align:left;
+h7{
+  text-align: left;
   font-family: 'Comfortaa', cursive;
   font-size: 60px;
   color: #434b4d;
