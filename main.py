@@ -87,7 +87,7 @@ def sellerregister():
 
     if declare == "Disagree":
       # invalid
-      return render_template("registerfailed.html")
+      return render_template("templates/registerfailed.html")
 
     else:
       # write variables into json
@@ -109,7 +109,7 @@ def sellerregister():
       fout = open("info.txt", "a")
       fout.write(s_newjson + "\n")
       fout.close()
-      return
+      return render_template("templates/registeroutput.html")
     return
 
 
