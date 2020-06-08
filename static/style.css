@@ -49,6 +49,7 @@ p3 {
   text-align: left;
   background: #ffffff;
   border-radius: 10px;
+  justify-content: space-between;
 }
 
 .fheader{
@@ -56,6 +57,7 @@ p3 {
   text-align: left;
   background: #ffffff;
   border-radius: 10px;
+  justify-content: space-between;
 }
 
 .card{
@@ -285,4 +287,5 @@ h10{
   font-family: 'Poppins', sans-serif;
   font-size: 60px;
   color: #434b4d;
+  text-align: center;
 }
