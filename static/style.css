@@ -23,6 +23,12 @@ body2 {
     /* __para__ */
 
 /* Index Information */
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
 p1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 30px;
