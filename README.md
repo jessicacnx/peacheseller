@@ -6,10 +6,10 @@ about peache:
 about peache seller:
 - peache seller enables people to upload their products to peache.
 
-The site:
+the site:
 - This website allows people to register as a peache seller and to upload their products.
 - There are some information about peache and peache sellers on the website.
 - There are web forms connected to the index home page.
 
-Link to the schedule:
+link:
 - <a href="">peache seller</a>
