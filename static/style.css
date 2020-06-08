@@ -25,13 +25,13 @@ body2 {
 /* Index Information */
 p1 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 /* Form Text*/
 p2 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -45,14 +45,14 @@ p3 {
 
     /* __div__ */
 .header{
-  padding: 30px;
+  padding: 40px;
   text-align: left;
   background: #ffffff;
   border-radius: 10px;
 }
 
 .fheader{
-  padding: 30px;
+  padding: 40px;
   text-align: left;
   background: #ffffff;
   border-radius: 10px;
@@ -60,14 +60,14 @@ p3 {
 
 .card{
   background: white;
-  padding: 20px;
+  padding: 40px;
   text-align: left;
   border-radius: 10px;
 }
 
 .fcard{
   background: white;
-  padding: 20px;
+  padding: 40px;
   text-align: left;
   border-radius: 10px;
 }
@@ -243,7 +243,7 @@ img{
 h1 {
   font-family: 'Comfortaa', cursive;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 45px;
   text-align: center;
   color: #2b2d2f;
 }
@@ -252,7 +252,7 @@ h1 {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 40px;
   color: #363636;
 }
 
@@ -260,7 +260,7 @@ h2 {
 h3{
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;
   color: #2b2d2f;
 }
 
@@ -283,6 +283,6 @@ h5{
 /* peache */
 h10{
   font-family: 'Poppins', sans-serif;
-  font-size: 80px;
+  font-size: 60px;
   color: #434b4d;
 }
