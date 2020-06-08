@@ -97,12 +97,19 @@ p4 {
 }
 
 .image{
-    background: black url(media/peachebanner1.PNG) center no-repeat;
+    background-image:url(media/peachebanner1.PNG);
+    background-position: center;
+    height: 40%;
+    width: auto;
 }
 
 .fimage{
-    background: black url(../media/peachebanner1.PNG) center no-repeat;
+    background-image:url(../media/peachebanner1.PNG);
+    background-position: center;
+    height: 40%;
+    width: auto;
 }
+
 /* ---------------------------------------------------------------- */
 
     /* __input__ */
