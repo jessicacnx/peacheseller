@@ -96,7 +96,7 @@ p3 {
 
 /* Submtit Button */
 input[type=submit]{
-  background-color: #edadc5;
+  background-color: #e38d86;
   border: 10px;
   color: white;
   text-align: center;
@@ -111,7 +111,7 @@ input[type=submit]{
 
 /* Submtit Button Hover */
 input[type=submit]:hover {
-  background-color: #f291ab;
+  background-color: #d97871;
   border: 10px;
   color: white;
   text-align: center;
@@ -127,7 +127,7 @@ input[type=submit]:hover {
 /*-----------------------------------------------------------------------------*/
     /* Bullet Point Button */
 /* Customize the label (the container) */
-.container {
+.radio {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -141,7 +141,7 @@ input[type=submit]:hover {
 }
 
 /* Hide the browser's default radio button */
-.container input {
+.radio input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -161,12 +161,12 @@ input[type=submit]:hover {
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+.radio:hover input ~ .checkmark {
   background-color: #ccc;
 }
 
 /* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.radio input:checked ~ .checkmark {
   background-color: #edadc5;
 }
 
@@ -178,12 +178,12 @@ input[type=submit]:hover {
 }
 
 /* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
+.radio input:checked ~ .checkmark:after {
   display: block;
 }
 
 /* Style the indicator (dot/circle) */
-.container .checkmark:after {
+.radio .checkmark:after {
   top: 9px;
   left: 9px;
   width: 8px;
@@ -216,7 +216,7 @@ input[type=text]:focus {
 a{
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  color: #edadc5;
+  color: #c98a85;
 }
 
 /* image */
